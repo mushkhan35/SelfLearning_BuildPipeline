@@ -15,12 +15,12 @@ stages:
   - job: FirstJob
     steps:
     - bash: echo FirstJob
-- stage: Dev Deploy
+- stage: DevDeploy
   jobs:
   - job: QADeployJob
     steps:
     - bash: echo QADeployJob
-- stage: Prod Deploy
+- stage: ProdDeploy
   jobs:
     - job: ProdDeployJob
       steps:
