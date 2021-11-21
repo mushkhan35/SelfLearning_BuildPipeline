@@ -15,7 +15,7 @@ stages:
   - job: FirstJob
     steps:
     - bash: echo FirstJob
-    - bash: echi $(PipelineLevelVariable)
+    - bash: echo $(PipelineLevelVariable)
 - stage: DevDeploy
   variables:
     environment: Dev
